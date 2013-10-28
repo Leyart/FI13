@@ -14,16 +14,21 @@ int main() {
 	cout << "Inserire un numero, -1 termina, 0 termina gruppo: " << endl;
 	cin >> num;
 	while (num != -1) { // finché ci sono gruppi
-		sum=0;
-		while(num != -1 && num != 0) {// finché ci sono numeri nel gruppo
+		sum = 0;
+		while (num != -1 && num != 0) { // finché ci sono numeri nel gruppo
 			sum += num;
-			cout << "inserire un numero, -1 termina, 0 termina gruppo: " << endl;
+			cout << "inserire un numero, -1 termina, 0 termina gruppo: "
+					<< endl;
 			cin >> num;
 		}
 		cout << "Somma: " << sum << endl; // stampa la somma del gruppo appena terminato
-		cout << "Inserire un numero, -1 termina, 0 termina gruppo: " << endl;
-		cin >> num;
+
+		if (num != -1) {
+			cout << "Inserire un numero, -1 termina, 0 termina gruppo: "
+					<< endl;
+			cin >> num;
+		}
 	}
 	cout << "Grazie e alla prossima!!" << endl;
-			return 0;
+	return 0;
 }

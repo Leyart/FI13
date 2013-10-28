@@ -30,7 +30,7 @@ int main2() {
 	cout << "Versione con ciclo a condizione finale"
 	     << "\nInserisci n: " << endl;
 	cin >> n;
-	if (n >= 0) {
+	if (n > 0) {
 		int somma = 0, i = 1;
 		do {                   // ciclo a condizione finale
 			somma += i;
@@ -59,7 +59,7 @@ int main3() {
 
 int main() {
 	//main1();
-	//main2();
-	main3();
+	main2();
+	//main3();
 	return 0;
 }
