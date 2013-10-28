@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {   // Legge un carattere e stampa il codice ASCII
-  char c;      // se è una minuscola; altrimenti termina
+  char c;      // se è una minuscola; altrimenti termina.
   int i;
   cout << "Scrivi un car. minuscolo (maiusc. x finire)" << endl;
   cin >> c;
