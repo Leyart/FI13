@@ -13,6 +13,7 @@ int main1() {
 	const int size = 10;
 	char buffer[size];
 	int i = 0;
+	cout << "Uso ciclo while" << endl;
 	while (i < size) {
 		cout << "Prossimo carattere: " << endl;
 		cin >> buffer[i];
@@ -68,8 +69,8 @@ int main3() { // uso ctrl-z come sentinella
 }
 
 int main() {
-//  main1();
+  main1();
 //	main2();
-	main3();
+//	main3();
 	return 0;
 }

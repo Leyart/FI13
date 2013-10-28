@@ -22,7 +22,7 @@ int main() {
 			<< " per matrice2" << endl;
 	cin >> righe2 >> col2;
 	if (righe1 <= MAXDIM && righe2 <= MAXDIM && col1 <= MAXDIM && col2 <= MAXDIM
-			&& righe1 == col2) {
+			&& col1 == righe2) {
 		cout << "Inserisci " << righe1 * col1 << " valori per matrice1" << endl;
 		for (riga = 0; riga < righe1; ++riga)
 			for (col = 0; col < col1; ++col)
@@ -45,6 +45,6 @@ int main() {
 	} else if (righe1 == col2)
 		cout << "DIMENSIONI DEVONO ESSERE MINORI DI  " << MAXDIM << endl;
 	else
-		cout << "NUMERO RIGHE MATRICE1 DIVERSO NUMERO COLONNE MATRICE2" << endl;
+		cout << "NUMERO COLONNE MATRICE1 DIVERSO NUMERO RIGHE MATRICE2" << endl;
 	return 0;
 }

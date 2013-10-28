@@ -15,6 +15,7 @@ int orizzontale() {
 
 	int arr[size] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	for (int i = 0; i < size; ++i) {
+		cout << i << " " << arr[i] << " ";
 		for (int j = 1; j <= arr[i]; ++j)
 			cout << "*";
 		cout << '\n';
@@ -50,6 +51,6 @@ int verticale() {
 }
 
 int main() {
-	// orizzontale();
+	//orizzontale();
 	verticale();
 }
