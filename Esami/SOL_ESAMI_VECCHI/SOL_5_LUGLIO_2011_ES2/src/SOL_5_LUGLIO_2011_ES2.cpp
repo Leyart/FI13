@@ -7,10 +7,14 @@
 
 #include <iostream>
 #include "menu.h"
+#include <string>
+#include <list>
 
 
 
 int main() {
+
+	list<string> l;
 
 	pietanza piatto[50];
 
